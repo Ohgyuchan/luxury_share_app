@@ -17,10 +17,11 @@ class _HomeViewState extends State<HomeView> {
           pinned: true,
           floating: false,
           title: Text('MUSINSA'),
-          expandedHeight: 225,
+          expandedHeight: 100,
           bottom: PreferredSize(
             preferredSize: Size.fromHeight(0),
             child: AppBar(
+              elevation: 0,
               title: Text('dd'),
             ),
           ),
