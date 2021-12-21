@@ -16,13 +16,13 @@ class _HomeViewState extends State<HomeView> {
         SliverAppBar(
           pinned: true,
           floating: false,
-          title: Text('MUSINSA'),
+          title: const Text('MUSINSA'),
           expandedHeight: 100,
           bottom: PreferredSize(
-            preferredSize: Size.fromHeight(0),
+            preferredSize: const Size.fromHeight(0),
             child: AppBar(
               elevation: 0,
-              title: Text('dd'),
+              title: const Text('dd'),
             ),
           ),
         ),
