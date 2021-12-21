@@ -21,8 +21,31 @@ class _HomeViewState extends State<HomeView> {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(0),
             child: AppBar(
-              elevation: 0,
-              title: const Text('dd'),
+              title: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  IconButton(
+                    icon: const Icon(Icons.ac_unit),
+                    onPressed: () {},
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.ac_unit),
+                    onPressed: () {},
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.ac_unit),
+                    onPressed: () {},
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.ac_unit),
+                    onPressed: () {},
+                  ),
+                  IconButton(
+                    icon: const Icon(Icons.ac_unit),
+                    onPressed: () {},
+                  ),
+                ],
+              ),
             ),
           ),
         ),
@@ -34,7 +57,7 @@ class _HomeViewState extends State<HomeView> {
                 alignment: Alignment.center,
                 color: Colors.purple[100 * (index % 10)],
                 child: Text(
-                  'List Item $index',
+                  'List Item ${index + 1}',
                   style: const TextStyle(fontSize: 20),
                 ),
               );
