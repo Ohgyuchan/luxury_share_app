@@ -13,42 +13,12 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
         body: CustomScrollView(
       slivers: <Widget>[
-        SliverAppBar(
+        const SliverAppBar(
           pinned: true,
-          floating: false,
-          title: const Text('MUSINSA'),
-          expandedHeight: 100,
-          bottom: PreferredSize(
-            preferredSize: const Size.fromHeight(0),
-            child: AppBar(
-              title: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  IconButton(
-                    icon: const Icon(Icons.ac_unit),
-                    onPressed: () {},
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.ac_unit),
-                    onPressed: () {},
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.ac_unit),
-                    onPressed: () {},
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.ac_unit),
-                    onPressed: () {},
-                  ),
-                  IconButton(
-                    icon: const Icon(Icons.ac_unit),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-            ),
-          ),
+          floating: true,
+          title: Text('MUSINSA'),
         ),
+        // Container(),
         SliverFixedExtentList(
           itemExtent: 50.0,
           delegate: SliverChildBuilderDelegate(
